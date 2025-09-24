@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message</title>
+</head>
+<body>
+    <script>
+        
+        function getMessage(name) {
+            return `Hello, ${name}...`;
+        }
+
+        const message = getMessage('Do Hyun');
+        document.write(message + "<br>");
+
+        
+        setInterval(
+            () => { document.write('...Hello again!<br>') },
+            3000
+        );
+
+       
+        function intro1() {
+            document.body.innerHTML = '안녕하세요! 저는 제주대학교 컴퓨터공학과 이도현입니다.';
+        }
+        function intro2() {
+            document.body.innerHTML = '백엔드 개발자를 희망하고 현재는 웹 개발을 배우고 있어요!';
+        }
+        function intro3() {
+            document.body.innerHTML = 'JavaScript 처음 배우는데 정말 재밌네요!';
+        }
+
+        const intros = [intro1, intro2, intro3];
+        let index = 0;
+
+        setInterval(() => {
+            intros[index % intros.length]();
+            index++;
+        }, 3000);
+    </script>
+</body>
+</html>

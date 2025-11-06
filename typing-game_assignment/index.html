@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>타이핑 게임 꾸미기 과제</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>⌨️ 타이핑 게임 꾸미기 과제</h1>
+      <p class="instructions">단어를 빠르고 정확하게 입력하세요!</p>
+
+      <!-- ✅ 실시간 타이머 -->
+      <p id="live-timer">⏱️ 진행 시간: 0.00초</p>
+
+      <p id="quote">Dream big work hard</p>
+      <input type="text" id="typed-value" placeholder="단어를 입력하세요" disabled />
+      <br />
+      <button id="start-button">게임 시작</button>
+      <p id="best-record">🏆 최고 기록: --초</p>
+    </div>
+
+    <!-- ✅ 결과 모달창 -->
+    <div id="result-modal">
+      <div class="modal-content">
+        <h2 id="modal-message">🎉 축하합니다!</h2>
+        <p id="modal-time">⏱️ 소요 시간: 0초</p>
+        <p id="modal-speed">⚡ 평균 속도: 0.00초/단어</p>
+        <button id="restart-button">다시 하기</button>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

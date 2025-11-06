@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "My Carbon Trigger",
+  "description": "A simple carbon usage viewer for your region.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "dist/index.html",
+
+	"action": {
+  "default_popup": "dist/index.html",
+  "default_icon": {
+    "16": "dist/images/plants-people.png"
+  },
+  "default_title": "My Carbon Trigger"
+}
+
+
+    "default_icon": {
+      "16": "dist/images/plants-people.png",
+      "48": "dist/images/plants-people.png",
+      "128": "dist/images/plants-people.png"
+    }
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "icons": {
+    "16": "dist/images/plants-people.png",
+    "48": "dist/images/plants-people.png",
+    "128": "dist/images/plants-people.png"
+  }
+}

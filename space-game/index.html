@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-  <html>
-  <head>
+<html lang="ko">
+<head>
   <meta charset="UTF-8" />
   <title>Space Game</title>
-  </head>
-  <body>
-  <canvas id="myCanvas" width="1024" height="768" style="border:1px solid #d3d3d3;">
-  Your browser does not support the HTML5 canvas tag.</canvas>
-  <script src="app.js">
-  </script>
-  </body>
-  </html>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ★★ 타이틀 화면 ★★ -->
+  <div id="title-screen">
+    <h1>SPACE GAME</h1>
+    <button id="btn-start">GAME START</button>
+  </div>
+
+  <canvas id="myCanvas" width="1024" height="768"></canvas>
+
+  <div id="stage-text">STAGE 1</div>
+
+  <div id="ui-life">
+    <img src="assets/life.png" id="life1" />
+    <img src="assets/life.png" id="life2" />
+    <img src="assets/life.png" id="life3" />
+  </div>
+
+  <div id="boss-hp-wrapper" class="hidden">
+    <div id="boss-hp-bar"></div>
+  </div>
+
+  <!-- 사운드 -->
+  <audio id="snd-laser" src="assets/sounds/laser.mp3"></audio>
+  <audio id="snd-explosion" src="assets/sounds/explosion.mp3"></audio>
+  <audio id="snd-boss" src="assets/sounds/boss_alert.mp3"></audio>
+  <audio id="snd-hit" src="assets/sounds/hit.mp3"></audio>
+
+  <script src="app.js"></script>
+</body>
+</html>
